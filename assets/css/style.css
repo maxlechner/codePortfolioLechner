@@ -2,24 +2,24 @@
     font-family: Arial, Helvetica, sans-serif;
 } */
 
-body {
+/* body {
     display: flex;
     flex-direction: column;
     line-height: 1.3;
-  }
+  } */
   
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    background-color: #251a65;
+    background-color: #686769;
     color: #fff;
   }
   
   header h1 {
     font-size: 200%;
-    background: rgb(13, 104, 24);
+    background: rgb(10, 10, 10);
     background-clip: border-box;
   }
   
@@ -27,6 +27,8 @@ body {
     margin: 2% 0;
     font-size: 250%;
   }
+
+
   
   nav ul {
     display: flex;
@@ -35,29 +37,27 @@ body {
     min-width: 300px;
   }
 
-  nav a {
+ a {
     color: #b9c6ae;
     font-weight: bold;
     text-decoration: none;
   }
   
-  nav a:hover {
+  a:hover {
     color: #fff;
   }
   
-  main {
+  .main {
     display: flex;
-    /* flex: 1 1 0; */
-    /* max-width: 1200px; */
-    margin: 2% auto;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   .container {
     display: flex;
-    justify-content: center;
+    margin: 0 10% auto;
     align-items: center;
     max-width: 80%;
   }
@@ -65,6 +65,7 @@ body {
   .card-left {
     padding: 10px;
     text-align: right;
+    width: 20%;
     /* border-style: solid; */
     border-width: 1px;
   }
@@ -76,42 +77,46 @@ body {
     border-width: 1px;
   }
   
+  .card-img {
+        width: 100%;
+        height: 150px;
+  }
+
+  .card-img h2{
+    font-size: 150%;
+    width: 10%;
+    background: rgb(13, 104, 24);
+    background-clip: border-box;
+    position: relative;
+  }
+
+    .container ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-decoration: underline;
+        min-width: 60%;
+    }
   
   footer {
     display: flex;
     justify-content: center;
     padding: 2%;
-    background-color: #251a65;
+    background-color: #686769;
     color: #fff;
     flex-shrink: 0;
   }
-  /* Sticky Footer */
 
-  .resources .links {
-    display: none;
-    padding: 1% 0;
-  }
+
   
-  .resources:hover .links {
-    display: block;
-  }
-  
-  .resources h3 {
-    font-size: 150%;
-  }
-  
-  .links a {
-    color: #772014;
-    text-decoration: none;
-  }
-  
-  .links a:hover {
-    text-decoration: underline;
-  }
   
   @media screen and (max-width: 768px) {
     header {
       flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
     }
   
     main {
