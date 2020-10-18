@@ -48,7 +48,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .container {
@@ -63,14 +63,14 @@
     flex-direction: row;
     justify-content: space-between;
     text-decoration: underline;
-    min-width: 60%;
+    min-width: 50%;
 }
 
 
   .card-left {
     padding: 10px;
     text-align: right;
-    width: 20%;
+    width: 240px;
     border-right: 5px solid rgb(58, 55, 55);
 
   }
@@ -83,10 +83,23 @@
     flex-direction: column;
   }
   
+  .card-right-img {
+    text-align: left;
+    margin-left: 10px;
+    width: 90%;
+    border: 10px solid rgb(58, 55, 55);
+    flex-direction: column;
+  }
+  
   .card-img {
         width: 100%;
         height: 150px;
   }
+
+  span::before {
+      content: '\A'; 
+      white-space: pre;
+    }
 
   .card-img-text {
     padding: 10px;
