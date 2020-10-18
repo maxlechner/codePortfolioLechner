@@ -22,6 +22,7 @@
   }
   
   h2 {
+    display: flex;
     margin: 2% 0;
     font-size: 250%;
   }
@@ -58,10 +59,41 @@
     max-width: 80%;
   }
 
+    .head-img {
+        position: relative;
+        text-align: center;
+    }
+
+  .bottom-right {
+    position: absolute;
+    bottom: 20px;
+    right: 1px;
+    padding: 10px;
+    font-size: 120%;
+    text-align: left;
+    width: 20%;
+    background: rgb(8, 8, 8);
+    background-clip: border-box;
+    color: #fff;
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 20px;
+    left: 110px;
+    padding: 10px;
+    font-size: 100%;
+    text-align: left;
+    width: 10%;
+    background: rgb(58, 55, 55);
+    background-clip: border-box;
+    color: #fff;
+  }
+
   .container ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     text-decoration: underline;
     min-width: 50%;
 }
@@ -78,22 +110,24 @@
   .card-right {
     padding: 10px;
     text-align: left;
-    width: 100%;
+    width: 90%;
     border-width: 1px;
     flex-direction: column;
   }
   
   .card-right-img {
-    text-align: left;
-    margin-left: 10px;
-    width: 90%;
+    margin-left: 20px;
+    width: 80%;
     border: 10px solid rgb(58, 55, 55);
-    flex-direction: column;
   }
   
   .card-img {
         width: 100%;
         height: 150px;
+  }
+
+  .container:hover .card-right-img {
+    opacity: 0.3;
   }
 
   span::before {
@@ -104,6 +138,19 @@
   .card-img-text {
     padding: 10px;
     font-size: 150%;
+    width: 20%;
+    background: rgb(8, 8, 8);
+    background-clip: border-box;
+    color: #fff;
+    position: absolute;  
+    left: 90%;                        
+    top: 20%; 
+    transform: translate(-50%, -50%); 
+  }
+
+  .button-img-text {
+    padding: 10px;
+    font-size: 80%;
     width: 20%;
     background: rgb(8, 8, 8);
     background-clip: border-box;
