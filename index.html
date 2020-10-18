@@ -13,10 +13,10 @@
         <h1>Lechner</h1>
         <nav>
           <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact Me</a></li>
-            <li><a href="#">Resume</a></li>
+            <li><a href="#About">About Me</a></li>
+            <li><a href="#Work">Work</a></li>
+            <li><a href="#Contact">Contact Me</a></li>
+            <!-- <li><a href="#">Resume</a></li> -->
           </ul>
         </nav>
       </header>
@@ -24,10 +24,9 @@
       <main class="main">
             <div class = "head-img">
                 <img class="card-img" src="./assets/images/texture.jpg" alt="concrete texture" />
-                <!-- <h2 class="card-img-text">Work in progress</h2> -->
                 <div class="bottom-right">A work in progress</div>
             </div>
-            <div class="container">
+            <div id="About" class="container">
                 <h2 class ="card-left">About Me</h2>
                 <p class= "card-right">
                     I am currently a student in the University of Washington coding bootcamp.
@@ -35,15 +34,17 @@
                     <span>In my freetime I enjoy spending time outdoors with my wife and three Greyhounds.</span>
                 </p>
             </div>
-            <div class="container">
+            <div id="Work" class="container">
                 <h2 class ="card-left">Work</h2>
                 <div class ="head-img">
-                    <img class= "card-right-img" src="./assets/images/button.jpg" alt="concrete texture" />
-                    <div class="bottom-left">Future work</div>
+                    <a href="https://maxlechner.github.io/CodeRefactorSEO/" target="_blank">
+                        <img class= "card-right-img" href="" src="./assets/images/button.jpg" alt="concrete texture" />
+                    </a>
+                    <div class="bottom-left">Code Refactor</div>
                 </div>
                 
             </div>
-            <div class="container">
+            <div id="Contact" class="container">
                 <h2 class ="card-left">Contact Me</h2>
                 <ul class = "card-right">
                     <li><a href="tel:3033782300">(303) 378-2300</a></li>
