@@ -3,56 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Max Lechner Portfolio</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    
 </head>
 
 <body>
-    <header>
-        <h1>Lechner</h1>
-        <nav>
-          <ul>
-            <li><a href="#About">About Me</a></li>
-            <li><a href="#Work">Work</a></li>
-            <li><a href="#Contact">Contact Me</a></li>
-            <!-- <li><a href="#">Resume</a></li> -->
-          </ul>
-        </nav>
-      </header>
+
+    <!-- Navbar utility using bootstrap 4 -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #848586;">
+        <div class="container">
+            <a class="navbar-brand" href="#">Lechner</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#About">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Work">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contact">Contact Me</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
       
+
+<!-- texture bar -->
+
       <main class="main">
+        <div class= "container" style="width: max-content;">
             <div class = "head-img">
                 <img class="card-img" src="./assets/images/texture.jpg" alt="concrete texture" />
                 <div class="bottom-right">A work in progress</div>
             </div>
-            <div id="About" class="container">
-                <h2 class ="card-left">About Me</h2>
-                <p class= "card-right">
-                    I am currently a student in the University of Washington coding bootcamp.
-                    I have a full time career as a cyber security consultant with Deloitte and Touche LLP.
-                    <span>In my freetime I enjoy spending time outdoors with my wife and three Greyhounds.</span>
-                </p>
-            </div>
+        </div>
 
-            <div id="Work" class="container">
-                <h2 class ="card-left">Work</h2>
-                <div class ="head-img">
-                    <a href="https://jjhphoto.github.io/celebchecker/" target="_blank">
-                        <img class= "card-right-img" href="" src="./assets/images/celebchecker.PNG" alt="concrete texture" />
-                    </a>
-                    <div class="bottom-left">Celeb Checker</div>
+        <!-- Body built using the bootstrap 4 framework -->
+        <div id="About" class="container mt-30">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h2>About Me</h2>
                 </div>
-                
+
+                <div class="col-9">
+                    <p>
+                        I am currently a student in the University of Washington coding bootcamp.
+                        I have a full time career as a cyber security consultant with Deloitte and Touche LLP.
+                        <span>In my freetime I enjoy spending time outdoors with my wife and three Greyhounds.</span>
+                    </p>
+                </div>
             </div>
-            <div id="Contact" class="container">
-                <h2 class ="card-left">Contact Me</h2>
-                <ul class = "card-right">
-                    <li><a href="tel:3033782300">(303) 378-2300</a></li>
-                    <li><a href="mailto:mkonlech@gmail.com">mkonlech@gmail.com</a></li>
-                    <li><a href="https://github.com/maxlechner" target="_blank">Github</a></li>
-                </ul>
+        </div>
+
+        <div id="Work" class="container mt-30">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h2>Work</h2>
+                </div>
+
+                <div class="col-9">
+                    <div class ="head-img">
+                        <a href="https://jjhphoto.github.io/celebchecker/" target="_blank">
+                            <img class= "card-right-img" href="" src="./assets/images/celebchecker.PNG" alt="concrete texture" />
+                        </a>
+                    </div>
+                    <div class="row mt-30">
+                        <div class="col-8 col-sm-6">
+                            <a href="https://jjhphoto.github.io/celebchecker/" target="_blank">
+                                <img class= "card-right-img" href="" src="./assets/images/celebchecker.PNG" alt="concrete texture" />
+                            </a>
+                        </div>
+                        <div class="col-4 col-sm-6">
+                            <a href="https://jjhphoto.github.io/celebchecker/" target="_blank">
+                                <img class= "card-right-img" href="" src="./assets/images/celebchecker.PNG" alt="concrete texture" />
+                            </a>
+                        </div>
+                      </div>
+                </div>
             </div>
+        </div>
+
+        <div id="Contact" class="container mt-30">
+
+            <div class="row align-items-center">
+
+                <div class="col">
+                    <h2 class >Contact Me</h2>
+                </div>
+
+                <div class="col-9">
+                    <ul>
+                        <li><a href="tel:3033782300">(303) 378-2300</a></li>
+                        <li><a href="mailto:mkonlech@gmail.com">mkonlech@gmail.com</a></li>
+                        <li><a href="https://github.com/maxlechner" target="_blank">Github</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
       </main>
 
 
@@ -62,4 +123,14 @@
       </footer>
     
 </body>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </html>
