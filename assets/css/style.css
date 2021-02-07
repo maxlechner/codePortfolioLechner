@@ -43,21 +43,6 @@
   a:hover {
     color: rgb(2, 2, 2);
   }
-  
-  /* .main {
-    display: flex;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  } */
-
-  /* .container {
-    display: flex;
-    /* margin: 0 10% auto; */
-    /* align-items: left;
-    max-width: 100%;
-  /* } */ 
 
     .head-img {
         position: relative;
